@@ -6,9 +6,9 @@
         $sql = "DELETE FROM clientes WHERE id = '$id'";
 
         if(mysqli_query($connect, $sql)):
-            header('Location: ..index.php?sucess');
+            header('Location: ../index.php?sucess');
         else:
-            header('Location: index.php?error');
+            header('Location: ../index.php?error');
         endif;
     endif;
 ?>
