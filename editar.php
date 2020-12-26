@@ -33,7 +33,7 @@
         <label for="email">Email</label>
 
         <input type="text" name="idade" id="idade" value="<?= $dados['idade'];?>">
-        <label for="idade">Idade</label>
+        <label for="idade">Idade</label><br>
 
         <input type="submit" class="editar" name="btn-editar" value="Editar"/>
         <a href="index.php">Lista de clientes</a>
