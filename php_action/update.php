@@ -8,7 +8,7 @@
         $idade = mysqli_escape_string($connect, $_POST['idade']);
 
         $id = mysqli_escape_string($connect, $_POST['id']);
-        $sql = "UPDATE clientes SET nome = '$nome', sobrenome = '$sobrenome', email = '$email', idade = '$idade'";
+        $sql = "UPDATE clientes SET nome = '$nome', sobrenome = '$sobrenome', email = '$email', idade = '$idade' WHERE id = '$id'";
         
         if(mysqli_query($connect, $sql)):
             header('Location: ../index.php?sucess');
